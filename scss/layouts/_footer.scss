@@ -1,0 +1,96 @@
+footer {
+  background-color: $c1-100;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+
+  .container {
+    padding-bottom: 5rem;
+    .item-left {
+        h1 {
+          @include text-style($fs-4, $fw-4, $c2);
+          padding-bottom: 1rem;
+        }
+        ul {
+          list-style-type: none;
+          li {
+            padding: 0.5rem 0;
+            h2 {
+              @include text-style($fs-1, $fw-4, $c6);
+              span {
+                @include text-style($fs-1, $fw-2, $c6);
+              }
+              a {
+                text-decoration: none;
+                @include text-style($fs-1, $fw-2, $c6);
+                transition: all 0.5s;
+                &:hover {
+                  color: $c2;
+                  text-decoration: underline;
+                }
+              }
+            }
+    
+            a {
+              text-decoration: none;
+              @include text-style($fs-1, $fw-2, $c6);
+              padding-right: 1rem;
+              transition: all 0.5s;
+              &:hover {
+                color: $c2;
+              }
+            }
+          }
+        }
+      }
+    
+      .item-right {
+        @media screen and (max-width: 767px) {
+          .col-xs-6 {
+            width: 50%
+          }
+        }
+        .item-content {
+          h2 {
+            @include text-style($fs-4, $fw-4, $c2);
+            padding-bottom: 1rem;
+          }
+    
+          ul {
+            list-style-type: none;
+            li {
+              padding: 0.5rem 0;
+    
+              a {
+                text-decoration: none;
+                @include text-style($fs-1, $fw-2, $c6);
+                transition: all 0.5s;
+                &:hover {
+                  color: $c2;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+  }
+ 
+  .copy-write {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid rgba(103, 99, 99, 0.14);
+    padding-top: 2rem;
+    h3 {
+        @include text-style($fs-1, $fw-2, $c6);
+        
+        a {
+            text-decoration: none;
+            @include text-style($fs-1, $fw-2, $c4);
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+  }
+}

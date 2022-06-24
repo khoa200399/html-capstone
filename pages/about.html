@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pooch Care</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- Font Jost -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Owl carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="../css/magnific-popup.css" />
+
+    <!-- File CSS   -->
+    <link rel="stylesheet" href="../css/about.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg row">
+          <a class="navbar-brand col-lg-3 col-md-3" href="#">Pooch Care</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+          >
+            <i
+              onclick="toggleState(this)"
+              class="fa-solid fa-bars"
+              id="btn-menu"
+            ></i>
+            <!-- <i onclick="toggleState(event)" class="fa-solid fa-xmark" id="btn-menu"></i> -->
+          </button>
+
+          <div class="navbar-flex col-lg-9 row">
+            <div
+              class="collapse navbar-collapse col-lg-8"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./homePage.html"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html"
+                    >About <span class="sr-only">(current)</span></a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="./services.html"
+                    >Services <span class="sr-only">(current)</span></a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="./gallery.html"
+                    >Gallery <span class="sr-only">(current)</span></a
+                  >
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                  >
+                    Blog
+                    <span><i class="fa-solid fa-angle-down"></i></span>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./blogPosts.html"
+                      >Blog Post</a
+                    >
+                    <a class="dropdown-item" href="#">Blog Single</a>
+                    <a class="dropdown-item" href="#">Landing Page</a>
+                    <!-- <div class="dropdown-divider"></div> -->
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html"
+                    >Contact <span class="sr-only">(current)</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <button class="btn-switch-mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <section class="about">
+      <div class="about-content py-sm-5 py-4">
+        <div class="container py-2">
+          <h2 class="about-title">About Us</h2>
+          <ul class="about-item mt-2">
+            <li>
+              <a href="./homePage.html">Home</a>
+            </li>
+            <li class="active">
+              <span>
+                <i class="fa-solid fa-arrow-right"></i>
+                About
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="aboutus">
+      <div class="container py-lg-5">
+        <div class="row">
+          <div
+            class="aboutus-left col-12 col-xl-5 col-lg-5 col-md-12 col-sm-12 pl-lg-4 pl-xl-4"
+          >
+            <div class="aboutus-left-item">
+              <h6>ABOUT US</h6>
+              <h3>
+                We Have 10+ Years Of <br />
+                Experience.
+              </h3>
+              <h4>Let Us Take Care Of Your Pets!</h4>
+            </div>
+          </div>
+          <div
+            class="aboutus-right col-12 col-xl-7 col-lg-7 col-md-12 col-sm-12 pl-lg-4 pl-lg-5"
+          >
+            <p>
+              Lorem ipsum dolor sit amet,Ea consequuntur .Ea consequuntur illum
+              facere aperiam sequi optio consectetur adipisicing elitFuga,
+              suscipit totam animi consequatur saepe blanditiis
+            </p>
+            <p class="mt-3 mb-3">
+              Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam
+              sequi optio consectetur adipisicing elit. Fuga, suscipit totam
+              animi consequatur saepe blanditiis.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="history">
+      <div class="row py-5">
+        <div class="container">
+          <div class="history-content py-lg-3">
+            <h4 class="sub-title">Our history of Pooch Care</h4>
+            <h3 class="hny-title two">Our history</h3>
+            <p class="mt-3">
+              Lorem ipsum dolor sit amet,Ea consequuntur .Ea consequuntur illum
+              facere aperiam sequi optio consectetur adipisicing elitFuga,
+              suscipit totam animi consequatur saepe blanditiis.Lorem ipsum
+              dolor sit amet,Ea consequuntur illum facere aperiam sequi optio
+              consectetur adipisicing elit.
+            </p>
+            <div class="history-grids">
+              <div class="history-info">
+                <h5 class="year">2017</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="history-info">
+                <h5 class="year">2018</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="history-info">
+                <h5 class="year">2019</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="history-info">
+                <h5 class="year">2020</h5>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+      <div class="container py-lg-4">
+        <div class="row py-5">
+          <div class="service-left col-xl-6 col-lg-6 col-md-12 text-lg-right">
+            <h6>Who we are</h6>
+            <h3>Why Choose Us</h3>
+            <p class="mt-3">
+              Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla,
+              gravida felis vitae. Phasellus lacinia id, sunt in culpa quis.
+              Phasellus lacinia
+            </p>
+            <img class="service-img mt-3" src="/img/banner3.jpg" alt="" />
+          </div>
+          <div class="service-right col-xl-6 col-lg-6 col-md-12">
+            <div class="row service-right-item">
+              <div class="service-item-icon col-12 col-md-2 col-sm-12">
+                <i class="fa-solid fa-hands-asl-interpreting"></i>
+              </div>
+              <div class="service-item-text col-md-10 col-sm-12">
+                <h6>
+                  <a href="#">Care Advices</a>
+                </h6>
+                <p>
+                  Lorem ipsum dolor sit amet,Ea consequuntur illum facere
+                  aperiam sequi optio consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="row service-right-item">
+              <div class="service-item-icon col-12 col-md-2 col-sm-12">
+                <i class="fa-solid fa-circle-question"></i>
+              </div>
+              <div class="service-item-text col-md-10 col-sm-12">
+                <h6>
+                  <a href="#"> Emergency Services</a>
+                </h6>
+                <p>
+                  Lorem ipsum dolor sit amet,Ea consequuntur illum facere
+                  aperiam sequi optio consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="row service-right-item">
+              <div class="service-item-icon col-12 col-md-2 col-sm-12">
+                <i class="fa-solid fa-headphones-simple"></i>
+              </div>
+              <div class="service-item-text col-md-10 col-sm-12">
+                <h6>
+                  <a href="#">Customer Supports</a>
+                </h6>
+                <p>
+                  Lorem ipsum dolor sit amet,Ea consequuntur illum facere
+                  aperiam sequi optio consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="row service-right-item">
+              <div class="service-item-icon col-12 col-md-2 col-sm-12">
+                <i class="fa-solid fa-user-doctor"></i>
+              </div>
+              <div class="service-item-text col-md-10 col-sm-12">
+                <h6>
+                  <a href="#">Veterinary Help</a>
+                </h6>
+                <p>
+                  Lorem ipsum dolor sit amet,Ea consequuntur illum facere
+                  aperiam sequi optio consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experts">
+      <div class="container">
+        <div class="experts-title">
+          <h6>OUR EXPERTS</h6>
+          <h3>Our Team</h3>
+        </div>
+        <div class="row">
+          <div class="experts-item col-lg-3 col-6 col-sm-6">
+            <div class="experts-img">
+              <a href="#">
+                <img src="/img/experts-1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="experts-infor">
+              <h3>
+                <a href="#">Micheal Wagou</a>
+              </h3>
+              <p>Training</p>
+              <div class="experts-icon">
+                <a href="#"> <i class="fa-brands fa-facebook-f"> </i></a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="experts-item col-lg-3 col-6 col-sm-6">
+            <div class="experts-img">
+              <a href="#">
+                <img src="/img/experts-2.jpg" alt="" />
+              </a>
+            </div>
+            <div class="experts-infor">
+              <h3>
+                <a href="#">Alex Mitchell</a>
+              </h3>
+              <p>Boarding</p>
+              <div class="experts-icon">
+                <a href="#"> <i class="fa-brands fa-facebook-f"> </i></a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="experts-item col-lg-3 col-6 col-sm-6">
+            <div class="experts-img">
+              <a href="#">
+                <img src="/img/experts-3.jpg" alt="" />
+              </a>
+            </div>
+            <div class="experts-infor">
+              <h3>
+                <a href="#">Scott Colon</a>
+              </h3>
+              <p>Grooming</p>
+              <div class="experts-icon">
+                <a href="#"> <i class="fa-brands fa-facebook-f"> </i></a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="experts-item col-lg-3 col-6 col-sm-6">
+            <div class="experts-img">
+              <a href="#">
+                <img src="/img/experts-4.jpg" alt="" />
+              </a>
+            </div>
+            <div class="experts-infor">
+              <h3>
+                <a href="#">John Harris</a>
+              </h3>
+              <p>Doggie Day Care</p>
+              <div class="experts-icon">
+                <a href="#"> <i class="fa-brands fa-facebook-f"> </i></a>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-5">
+            <div class="item-left">
+              <h1>Contact Information</h1>
+              <ul>
+                <li>
+                  <h2>
+                    Address:
+                    <span
+                      >#135 block, Barnard St. Brooklyn, London 10036, UK</span
+                    >
+                  </h2>
+                </li>
+                <li>
+                  <h2>
+                    Phone: <a href="tel:+(12)234-11-24">+(12)234-11-24</a>
+                  </h2>
+                </li>
+                <li>
+                  <h2>
+                    Email:
+                    <a href="mailto:example@mail.com">example@mail.com</a>
+                  </h2>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a href="https://www.twitter.com/"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                  <a href="https://dribbble.com/"
+                    ><i class="fa-brands fa-dribbble"></i
+                  ></a>
+                  <a href="https://google.com/"
+                    ><i class="fa-brands fa-google"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-7">
+            <div class="item-right row">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-6">
+                <div class="item-content">
+                  <h2>Company</h2>
+                  <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog Posts</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-6">
+                <div class="item-content">
+                  <h2>Quick Links</h2>
+                  <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Create Account</a></li>
+                    <li><a href="#">Care Center</a></li>
+                    <li><a href="#">Site Feedback</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-6">
+                <div class="item-content">
+                  <h2>Support</h2>
+                  <ul>
+                    <li><a href="#">All Dogs</a></li>
+                    <li><a href="#">Care Advices</a></li>
+                    <li><a href="#">Care Support</a></li>
+                    <li><a href="#">Veterinary Help</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copy-write">
+        <h3>
+          © 2020 Pooch Care. All Rights Reserved. Design by
+          <a href="https://w3layouts.com/">W3Layouts</a>
+        </h3>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Counter up -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../js/jquery.counterup.min.js"></script>
+
+    <!-- Owl Carousel -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Magnific popup -->
+    <script src="../js/jquery.magnific-popup.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../js/index.js"></script>
+  </body>
+</html>

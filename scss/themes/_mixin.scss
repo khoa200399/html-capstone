@@ -1,0 +1,18 @@
+@mixin btn-primary($fs,$fw,$borderRad,$bg-color,$txt-color,$border-color) {
+    padding: 12px 35px;
+    font-size: $fs;
+    font-weight: $fw;
+    border-radius: $borderRad;
+    background-color: $bg-color;
+    color: $txt-color;
+    border: 2px solid $border-color;
+    box-shadow: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@mixin text-style($fs,$fw,$txt-color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $txt-color;
+}
